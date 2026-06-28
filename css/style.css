@@ -38,3 +38,180 @@ body{
     background:#0b141a;
 }
 
+
+
+
+/* ==========================================
+   RESPONSIVE DESIGN
+==========================================*/
+
+/* Tablet */
+@media (max-width: 1024px){
+
+    .chat-list{
+        width:340px;
+    }
+
+    .chat-header h1{
+        font-size:28px;
+    }
+
+    .conversation-info p{
+        display:none;
+    }
+
+    .conversation-body{
+        padding:20px;
+    }
+
+    .message{
+        max-width:80%;
+    }
+
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    body{
+        overflow:hidden;
+    }
+
+    .container{
+        flex-direction:column;
+        height:100vh;
+    }
+
+    /* Bottom Navigation */
+
+    .sidebar{
+        order:2;
+        width:100%;
+        height:65px;
+        flex-direction:row;
+        justify-content:space-between;
+        padding:0 20px;
+        border-right:none;
+        border-top:1px solid #313d45;
+    }
+
+    .sidebar-top,
+    .sidebar-bottom{
+        flex-direction:row;
+        gap:18px;
+    }
+
+    .sidebar-bottom{
+        margin-left:auto;
+    }
+
+    .nav-icon{
+        width:40px;
+        height:40px;
+        font-size:20px;
+    }
+
+    /* Chat List */
+
+    .chat-list{
+        order:1;
+        width:100%;
+        height:calc(100vh - 65px);
+        border-right:none;
+    }
+
+    .chat-header{
+        padding:0 18px;
+    }
+
+    .chat-header h1{
+        font-size:28px;
+    }
+
+    .header-icons{
+        gap:16px;
+    }
+
+    .search-box{
+        margin:12px;
+    }
+
+    .filters{
+        overflow-x:auto;
+        scrollbar-width:none;
+        flex-wrap:nowrap;
+    }
+
+    .filters::-webkit-scrollbar{
+        display:none;
+    }
+
+    .filters button{
+        white-space:nowrap;
+        flex-shrink:0;
+    }
+
+    .chat{
+        padding:12px;
+    }
+
+    .chat img{
+        width:50px;
+        height:50px;
+    }
+
+    .chat-top h3{
+        font-size:17px;
+    }
+
+    .chat-info p{
+        font-size:14px;
+    }
+
+    /* Hide Chat Window */
+
+    .chat-window{
+        display:none;
+    }
+
+}
+
+/* Very Small Phones */
+@media (max-width:480px){
+
+    .chat-header h1{
+        font-size:24px;
+    }
+
+    .search-box{
+        height:44px;
+    }
+
+    .search-box input{
+        font-size:14px;
+    }
+
+    .chat img{
+        width:45px;
+        height:45px;
+    }
+
+    .chat-top h3{
+        font-size:16px;
+    }
+
+    .chat-top span{
+        font-size:12px;
+    }
+
+    .chat-info p{
+        font-size:13px;
+    }
+
+    .nav-icon{
+        width:36px;
+        height:36px;
+        font-size:18px;
+    }
+
+}
