@@ -31,24 +31,47 @@
 
         <aside class="sidebar">
             <!-- Write your code only -->
-            <div class="app-layout-wrapper">
-        
-        <nav class="orange-side-nav-strip">
-            <div class="top-nav-icons-group">
-                <div class="nav-icon-item active-state"><i class="fa-solid fa-message"></i></div>
-                <div class="nav-icon-item"><i class="fa-solid fa-circle-notch"></i></div>
-                <div class="nav-icon-item"><i class="fa-regular fa-compass"></i></div>
-                <div class="nav-icon-item"><i class="fa-solid fa-users"></i></div>
-            </div>
-            <div class="bottom-nav-icons-group">
-                <div class="nav-icon-item"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-                <div class="nav-icon-item"><i class="fa-regular fa-image"></i></div>
-                <div class="nav-avatar-display">
-                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Prof" alt="Profile">
+
+
+
+            <div class="sidebar-top">
+
+                <div class="nav-icon active">
+                    <i class="bi bi-chat-left-text-fill"></i>
                 </div>
+
+                <div class="nav-icon">
+                    <i class="bi bi-arrow-repeat"></i>
+                </div>
+
+                <div class="nav-icon">
+                    <i class="bi bi-chat-dots"></i>
+                </div>
+
+                <div class="nav-icon">
+                    <i class="bi bi-people"></i>
+                </div>
+
             </div>
-        </nav>
+
+            <div class="sidebar-bottom">
+
+                <div class="nav-icon">
+                    <i class="bi bi-stars"></i>
+                </div>
+
+                <div class="nav-icon">
+                    <i class="bi bi-image"></i>
+                </div>
+
+                <div class="nav-icon profile">
+
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Prof" alt="Profile">
+
+                </div>
+
             </div>
+
         </aside>
 
 
@@ -61,141 +84,194 @@
 
         <section class="chat-list">
             <!-- Write your code here -->
-             <div class="container">
 
-    <!-- LEFT SIDEBAR -->
-    <div class="sidebar">
 
-        <!-- HEADER -->
-        <div class="sidebar-header">
-            <h2>Chats</h2>
+            <!-- Header -->
+            <div class="chat-header">
 
-            
-            <div class="header-icons">
-  <i class="fa-regular fa-square-plus"></i>
-  <i class="fa-solid fa-ellipsis-vertical"></i>
-</div>
-        </div>
+                <h1>WhatsApp</h1>
 
-        <!-- SEARCH -->
-        <div class="search-box">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search or start new chat">
-        </div>
+                <div class="header-icons">
 
-        <!-- FILTERS -->
-        <div class="filters">
-            <button class="active">All</button>
-            <button>Unread</button>
-            <button>Favourites</button>
-            <button>Groups</button>
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
+                    <i class="bi bi-plus-square"></i>
 
-        <!-- CHAT LIST -->
-        <div class="chat-list">
+                    <i class="bi bi-three-dots-vertical"></i>
 
-            <div class="chat">
-                <img src="image/OIP (3).jpg" alt="User">
-                <div class="chat-info">
-                    <h4>Akash</h4>
-                    <p>Hi! How are you?</p>
                 </div>
-                <span>10:45 pm</span>
+
             </div>
 
-            <div class="chat">
-                <img src="image/boy.jpg" alt="User">
-                <div class="chat-info">
-                    <h4>Aayansh</h4>
-                    <p>See you tomorrow</p>
-                </div>
-                <span>8:30 pm</span>
+            <!-- Search -->
+
+            <div class="search-box">
+
+                <i class="bi bi-search"></i>
+
+                <input type="text" placeholder="Search or start a new chat">
+
             </div>
 
-            <div class="chat">
-                <img src="image/girl.jpg" alt="User">
-                <div class="chat-info">
-                    <h4>Sikha</h4>
-                    <p>See you at a glance</p>
-                </div>
-                <span>yesterday</span>
+            <!-- Filter Buttons -->
+
+            <div class="filters">
+
+                <button class="active">All</button>
+
+                <button>Unread</button>
+
+                <button>Favourites</button>
+
+                <button>Groups</button>
+
+                <button class="plus">
+
+                    <i class="bi bi-plus"></i>
+
+                </button>
+
             </div>
 
-            <div class="chat">
-                <img src="image/OIP (1).jpg" alt="User">
-                <div class="chat-info">
-                    <h4>Smruti</h4>
-                    <p>Let's go outside</p>
-                </div>
-                <span>yesterday</span>
+            <!-- Archived -->
+
+            <div class="archived">
+
+                <i class="bi bi-archive"></i>
+
+                <span>Archived</span>
+
             </div>
 
-            <div class="chat">
-                <img src="image/OIP (2).jpg" alt="User">
-                <div class="chat-info">
-                    <h4>Hassy</h4>
-                    <p>Let's go outside</p>
+            <!-- Chats -->
+
+            <div class="chat-items">
+
+                <div class="chat-items">
+
+                    <!-- Chat 1 -->
+                    <div class="chat active">
+                        <img src="https://i.pravatar.cc/150?img=1" alt="Dev Dynamos">
+                        <div class="chat-info">
+                            <div class="chat-top">
+                                <h3>Dev Dynamos</h3>
+                                <span>3:58 pm</span>
+                            </div>
+                            <p>Soumyashree: Yessss 😂</p>
+                        </div>
+                    </div>
+
+                    <!-- Chat 2 -->
+                    <div class="chat">
+                        <img src="https://i.pravatar.cc/150?img=7" alt="Mom">
+                        <div class="chat-info">
+                            <div class="chat-top">
+                                <h3>Mom ❤️</h3>
+                                <span>3:30 pm</span>
+                            </div>
+                            <p>Don't forget to eat lunch.</p>
+                        </div>
+                    </div>
+
+                    <!-- Chat 3 -->
+                    <div class="chat">
+                        <img src="https://i.pravatar.cc/150?img=6" alt="Dad">
+                        <div class="chat-info">
+                            <div class="chat-top">
+                                <h3>Dad</h3>
+                                <span>2:15 pm</span>
+                            </div>
+                            <p>Reached office safely.</p>
+                        </div>
+                    </div>
+
+                    <!-- Chat 4 -->
+                    <div class="chat">
+                        <img src="https://i.pravatar.cc/150?img=4" alt="Family">
+                        <div class="chat-info">
+                            <div class="chat-top">
+                                <h3>Family 👨‍👩‍👧‍👦</h3>
+                                <span>1:48 pm</span>
+                            </div>
+                            <p>Mom: Dinner at 8 PM.</p>
+                        </div>
+                    </div>
+
+                    <!-- Chat 5 -->
+                    <div class="chat">
+                        <img src="https://i.pravatar.cc/150?img=3" alt="Best Friend">
+                        <div class="chat-info">
+                            <div class="chat-top">
+                                <h3>Best Friend 😎</h3>
+                                <span>12:55 pm</span>
+                            </div>
+                            <p>Movie tonight?</p>
+                        </div>
+                    </div>
+
+                    <!-- Chat 6 -->
+                    <div class="chat">
+                        <img src="https://i.pravatar.cc/150?img=2" alt="Office Team">
+                        <div class="chat-info">
+                            <div class="chat-top">
+                                <h3>Office Team</h3>
+                                <span>11:40 am</span>
+                            </div>
+                            <p>Meeting starts in 10 minutes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Chat 7 -->
+                    <div class="chat">
+                        <img src="https://i.pravatar.cc/150?img=9" alt="Classmates">
+                        <div class="chat-info">
+                            <div class="chat-top">
+                                <h3>MCA Classmates</h3>
+                                <span>10:32 am</span>
+                            </div>
+                            <p>Assignment submission today.</p>
+                        </div>
+                    </div>
+
+                    <!-- Chat 8 -->
+                    <div class="chat">
+                        <img src="https://i.pravatar.cc/150?img=8" alt="Cousin">
+                        <div class="chat-info">
+                            <div class="chat-top">
+                                <h3>Cousin Brother</h3>
+                                <span>Yesterday</span>
+                            </div>
+                            <p>Happy Birthday! 🎉</p>
+                        </div>
+                    </div>
+
+                    <!-- Chat 9 -->
+                    <div class="chat">
+                        <img src="https://i.pravatar.cc/150?img=5" alt="Lenskart">
+                        <div class="chat-info">
+                            <div class="chat-top">
+                                <h3>Lenskart</h3>
+                                <span>Yesterday</span>
+                            </div>
+                            <p>Your order has been delivered.</p>
+                        </div>
+                    </div>
+
+                    <!-- Chat 10 -->
+                    <div class="chat">
+                        <img src="https://i.pravatar.cc/150?img=1" alt="College">
+                        <div class="chat-info">
+                            <div class="chat-top">
+                                <h3>College Notices</h3>
+                                <span>Monday</span>
+                            </div>
+                            <p>Semester exam schedule released.</p>
+                        </div>
+                    </div>
+
                 </div>
-                <span>yesterday</span>
+
             </div>
 
-            <div class="chat">
-                <img src="image/OIP.jpg" alt="User">
-                <div class="chat-info">
-                    <h4>Pratik</h4>
-                    <p>Hi! How are you?</p>
-                </div>
-                <span>27/04/26</span>
-            </div>
-
-            <div class="chat">
-                <img src="image/daddy.webp" alt="User">
-                <div class="chat-info">
-                    <h4>Baba</h4>
-                    <p>I'm coming home</p>
-                </div>
-                <span>23/04/26</span>
-            </div>
-
-            <div class="chat">
-                <img src="image/mpm.webp" alt="User">
-                <div class="chat-info">
-                    <h4>Maa</h4>
-                    <p>What are you doing?</p>
-                </div>
-                <span>21/04/26</span>
-            </div>
-
-            <div class="chat">
-                <img src="image/girl2.jpg" alt="User">
-                <div class="chat-info">
-                    <h4>Ritika</h4>
-                    <p>Hey! Kya kar rahe ho</p>
-                </div>
-                <span>20/04/26</span>
-            </div>
-
-            <div class="chat">
-                <img src="image/boy1.jpg" alt="User">
-                <div class="chat-info">
-                    <h4>pavan</h4>
-                    <p>That's my girl</p>
-                </div>
-                <span>18/04/26</span>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- RIGHT SIDE (IMPORTANT for WhatsApp look) -->
-    <div class="chat-area">
-        <h2>Select a chat</h2>
-        <p>Start messaging</p>
-    </div>
-
-</div>
-
+           
         </section>
 
 
@@ -207,113 +283,185 @@
         <!-- CHAT WINDOW [Dev: Lavanya] -->
         <!-- ========================= -->
         <section class="chat-window">
-            <div class="conversation-body">
-            <!-- Write your code here Lavanya -->
-             <div class="chat-window">
 
-    <div class="chat-header">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile">
+            <!-- Chat Header -->
 
-        <div class="contact-info">
-            <h3>Rahul</h3>
-            <p>Online</p>
-        </div>
-    </div>
+            <div class="conversation-header">
 
-    <div class="chat-body">
+                <div class="conversation-left">
 
-        <div class="date">Today</div>
+                    <img src="https://i.pravatar.cc/150?img=1" alt="Group">
 
-        <div class="received-message">
-            <p>Hey Rahul! How are you?</p>
-            <span>10:15 AM</span>
-        </div>
-            <div class="sent-message">
-        <p>Hi! I'm doing great.</p>
-        <span>10:16 AM</span>
-    </div>
-        <div class="received-message">
-    <p>Are you coming to class today?</p>
-    <span>10:17 AM</span>
-</div>
+                    <div class="conversation-info">
 
-<div class="sent-message">
-    <p>Yes! I'll be there in 10 minutes.</p>
-    <span>10:18 AM</span>
-</div>
+                        <h3>Dev Dynamos</h3>
 
-<div class="received-message">
-    <p>Great! See you soon 😊</p>
-    <span>10:19 AM</span>
-</div>
-    </div>
-    </div>
+                        <p>Lavanya, Soumyashree, Tapaswini , Gaurav, You</p>
+
+                    </div>
+
+                </div>
+
+                <div class="conversation-icons">
+
+                    <i class="bi bi-camera-video"></i>
+
+                    <i class="bi bi-telephone"></i>
+
+                    <i class="bi bi-search"></i>
+
+                    <i class="bi bi-three-dots-vertical"></i>
+
+                </div>
+
             </div>
 
 
+            <!-- Chat Background -->
+
+            <div class="conversation-body">
+
+                <div class="date-divider">Today</div>
+
+                <div class="message incoming">
+                    <span class="sender">Tapaswini</span>
+                    <p>Anyone building the chat screen?</p>
+                    <span class="time">3:56 pm</span>
+                </div>
+
+                <div class="message outgoing">
+                    <p>I think Soumyashree is working on the header navigation. Am I right?</p>
+                    <span class="time">3:57 pm</span>
+                </div>
+
+                <div class="message incoming">
+                    <span class="sender">Soumyashree</span>
+                    <p>Yes 😄</p>
+                    <span class="time">3:58 pm</span>
+                </div>
+
+                <div class="message incoming">
+                    <span class="sender">Lavanya</span>
+                    <p>I'm designing the login page.</p>
+                    <span class="time">4:00 pm</span>
+                </div>
+
+                <div class="message outgoing">
+                    <p>Awesome! I'll complete the footer section today.</p>
+                    <span class="time">4:01 pm</span>
+                </div>
+
+                <div class="message incoming">
+                    <span class="sender">Tapaswini</span>
+                    <p>Don't forget to push your changes to GitHub.</p>
+                    <span class="time">4:02 pm</span>
+                </div>
+
+                <div class="message outgoing">
+                    <p>Sure, I'll create a new branch and raise a pull request.</p>
+                    <span class="time">4:03 pm</span>
+                </div>
+
+                <div class="message incoming">
+                    <span class="sender">Soumyashree</span>
+                    <p>Perfect 👍</p>
+                    <span class="time">4:04 pm</span>
+                </div>
+
+                <div class="message incoming">
+                    <span class="sender">Lavanya</span>
+                    <p>Can someone send me the color palette?</p>
+                    <span class="time">4:05 pm</span>
+                </div>
+
+                <div class="message outgoing">
+                    <p>#111B21, #202C33, #2A3942 and #00A884.</p>
+                    <span class="time">4:06 pm</span>
+                </div>
+
+                <div class="message incoming">
+                    <span class="sender">Tapaswini</span>
+                    <p>Looks good! Make sure the spacing matches WhatsApp Web.</p>
+                    <span class="time">4:07 pm</span>
+                </div>
+
+                <div class="message outgoing">
+                    <p>I'm also making it responsive for different screen sizes.</p>
+                    <span class="time">4:08 pm</span>
+                </div>
+
+                <div class="message incoming">
+                    <span class="sender">Soumyashree</span>
+                    <p>Nice! Our mentor will definitely notice that.</p>
+                    <span class="time">4:09 pm</span>
+                </div>
+
+                <div class="message incoming">
+                    <span class="sender">Lavanya</span>
+                    <p>Have you added the WhatsApp wallpaper?</p>
+                    <span class="time">4:10 pm</span>
+                </div>
+
+                <div class="message outgoing">
+                    <p>Yes, it's added as a background image using CSS.</p>
+                    <span class="time">4:11 pm</span>
+                </div>
+
+                <div class="message incoming">
+                    <span class="sender">Tapaswini</span>
+                    <p>Great work everyone! 🎉</p>
+                    <span class="time">4:12 pm</span>
+                </div>
+
+                <div class="message outgoing">
+                    <p>I'll commit the final changes tonight.</p>
+                    <span class="time">4:13 pm</span>
+                </div>
+
+                <div class="message incoming">
+                    <span class="sender">Soumyashree</span>
+                    <p>Remember to write meaningful commit messages.</p>
+                    <span class="time">4:14 pm</span>
+                </div>
+
+                <div class="message outgoing">
+                    <p>Sure 😄</p>
+                    <span class="time">4:15 pm</span>
+                </div>
+
+                <div class="message incoming">
+                    <span class="sender">Lavanya</span>
+                    <p>Let's submit the project before tomorrow evening.</p>
+                    <span class="time">4:16 pm</span>
+                </div>
+
+                <div class="message outgoing">
+                    <p>Done! We are almost finished 🚀</p>
+                    <span class="time">4:17 pm</span>
+                </div>
+            </div>
 
             <!-- =================== -->
             <!-- Bottom Input  [Dev: Gaurav - Part 2]-->
             <!-- =================== -->
             <div class="conversation-footer">
-                <!-- Write your code here Gaurav -->
-        <div class="app-layout-wrapper">
-                 <div class="mock-chat-area">
-            
-            <footer class="orange-chat-footer">
-                
-                <div class="interactive-popup-holder">
-                    <button class="popup-trigger-element"><i class="fa-solid fa-plus desktop-action-btn"></i></button>
-                    <div class="pure-css-popup-menu attachment-dropdown-box">
-                        <div class="popup-menu-item"><i class="fa-solid fa-file" style="color: #7f66ff;"></i> Document</div>
-                        <div class="popup-menu-item"><i class="fa-solid fa-image" style="color: #007bfc;"></i> Gallery</div>
-                    </div>
-                </div>
 
-                <div class="interactive-popup-holder" style="margin-left: 4px;">
-                    <button class="popup-trigger-element"><i class="fa-regular fa-face-smile desktop-action-btn"></i></button>
-                    <div class="pure-css-popup-menu emoji-dropdown-box desktop-emoji-panel">
-                        <div class="emoji-header-title">Emojis</div>
-                        <div class="emoji-grid-layout">
-                            <span>😂</span><span>🔥</span><span>❤️</span><span>👍</span><span>🚀</span><span>🙏</span>
-                            <span>😍</span><span>🎉</span><span>😎</span><span>👏</span><span>💡</span><span>🌟</span>
-                        </div>
-                    </div>
-                </div>
+                <i class="bi bi-plus-lg"></i>
 
-                <div class="footer-input-wrapper">
-                    
-                    <div class="interactive-popup-holder mobile-only-element">
-                        <button class="popup-trigger-element"><i class="fa-regular fa-face-laugh mobile-only-element"></i></button>
-                        <div class="pure-css-popup-menu emoji-dropdown-box mobile-emoji-panel">
-                            <div class="emoji-header-title">Emojis</div>
-                            <div class="emoji-grid-layout">
-                                <span>😂</span><span>🔥</span><span>❤️</span><span>👍</span><span>🚀</span><span>🙏</span>
-                                <span>😍</span><span>🎉</span><span>😎</span><span>👏</span><span>💡</span><span>🌟</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <input type="text" class="chat-message-input" placeholder="Type a message">
-                    
-                    <i class="fa-solid fa-paperclip mobile-only-element"></i>
-                    <i class="fa-solid fa-indian-rupee-sign mobile-only-element" style="font-size: 17px;"></i>
-                    <i class="fa-solid fa-camera mobile-only-element"></i>
+                <i class="bi bi-emoji-smile"></i>
 
-                    <i class="fa-solid fa-microphone continuous-mic-icon desktop-action-btn"></i>
-                    <i class="fa-solid fa-paper-plane dynamic-send-action desktop-action-btn"></i>
+                <input type="text" placeholder="Type a message">
 
-                    <div class="mic-container-circle mobile-only-element">
-                        <i class="fa-solid fa-microphone continuous-mic-icon"></i>
-                        <i class="fa-solid fa-paper-plane dynamic-send-action"></i>
-                    </div>
+                <i class="bi bi-paperclip"></i>
 
-                </div>
-            </footer>
+                <!-- Voice Button -->
+                <i class="bi bi-mic-fill"></i>
 
-        </div>
+                <!-- Send Button -->
+                <button class="send-btn">
+                    <i class="bi bi-send-fill"></i>
+                </button>
 
-        </div>
             </div>
         </section>
 

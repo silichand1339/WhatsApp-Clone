@@ -1,97 +1,251 @@
-/* Write your css here */body{
-    margin:0;
-    background:#e5ddd5;
-    font-family: Arial, sans-serif;
-}
+
+/* ===================================
+   CHAT WINDOW
+=================================== */
 
 .chat-window{
-    width:70%;
-    height:100vh;
-    margin:auto;
-    background:white;
-}
 
-.chat-header{
+    flex:1;
+
     display:flex;
+
+    flex-direction:column;
+
+    background:#0b141a;
+
+}
+
+
+/* ===================================
+   CHAT HEADER
+=================================== */
+/* Chrome */
+/* Chat hover beautiful start */
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111b21;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#3b4a54;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#54656f;
+
+}
+/* Beautiful Scrollbar end */
+
+
+.conversation-header{
+
+    height:72px;
+
+    background:#202c33;
+
+    display:flex;
+
+    justify-content:space-between;
+
     align-items:center;
-    background:#f0f2f5;
-    padding:15px;
-    border-bottom:1px solid #ccc;
+
+    padding:0 22px;
+
+    border-left:1px solid #313d45;
+
 }
 
-.chat-header img{
-    width:50px;
-    height:50px;
+.conversation-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.conversation-left img{
+
+    width:48px;
+
+    height:48px;
+
     border-radius:50%;
-    margin-right:15px;
+
+    object-fit:cover;
+
 }
 
-.contact-info h3{
-    margin:0;
+.conversation-info h3{
+
     font-size:18px;
+
+    font-weight:500;
+
 }
 
-.contact-info p{
-    margin-top:5px;
-    color:gray;
+.conversation-info p{
+
+    margin-top:4px;
+
+    color:#9aa7af;
+
+    font-size:13px;
+
 }
-.contact-info{
+
+.conversation-icons{
+
+    display:flex;
+
+    gap:28px;
+
+    font-size:22px;
+
+    color:#aebac1;
+
+}
+
+.conversation-icons i{
+
+    cursor:pointer;
+
+}
+
+
+/* ===================================
+   CHAT BODY
+=================================== */
+
+.conversation-body{
+    flex:1;
     display:flex;
     flex-direction:column;
-}
-.chat-body{
-    padding:20px;
-    background:#efeae2;
-    height:calc(100vh - 80px);
-    overflow-y: auto;
+    gap:18px;
+    padding:30px;
+    overflow-y:auto;
+    overflow-x:hidden;
+
+    background-color:#0b141a;
+
+    background-image:
+        linear-gradient(rgba(11,20,26,.88), rgba(11,20,26,.88)),
+        url("https://wallpaperaccess.com/full/2224368.png");
+
+    background-repeat:repeat;
+    background-size:420px;
+    background-position:center;
 }
 
-.date{
-    text-align:center;
-    background:#d9fdd3;
-    width:80px;
-    margin:10px auto;
-    padding:5px;
+
+/* ===================================
+   DATE DIVIDER
+=================================== */
+
+.date-divider{
+
+    align-self:center;
+
+    background:#1f2c34;
+
+    color:#d9d9d9;
+
+    padding:8px 18px;
+
     border-radius:8px;
-    font-size:12px;
+
+    font-size:13px;
+
 }
 
-.received-message{
-    background:white;
-    width:250px;
-    padding:10px;
+
+/* ===================================
+   MESSAGE
+=================================== */
+
+.message{
+
+    max-width:420px;
+
+    padding:12px 14px;
+
     border-radius:10px;
-    margin-top:20px;
+
+    position:relative;
+
+    font-size:15px;
+
+    line-height:1.5;
+
 }
 
-.received-message p{
-    margin:0;
-}
+.sender{
 
-.received-message span{
+    color:#53bdeb;
+
     display:block;
-    text-align:right;
-    font-size:12px;
-    color:gray;
-    margin-top:5px;
-}
-.sent-message{
-    background:#d9fdd3;
-    width:250px;
-    padding:10px;
-    border-radius:10px;
-    margin-top:15px;
-    margin-left:auto;
+
+    font-weight:600;
+
+    margin-bottom:5px;
+
 }
 
-.sent-message p{
-    margin:0;
+.message p{
+
+    color:#e9edef;
+
 }
 
-.sent-message span{
+.time{
+
     display:block;
+
     text-align:right;
-    font-size:12px;
-    color:gray;
-    margin-top:5px;
+
+    margin-top:8px;
+
+    font-size:11px;
+
+    color:#8696a0;
+
+}
+
+
+/* ===================================
+   INCOMING
+=================================== */
+
+.incoming{
+
+    background:#202c33;
+
+    align-self:flex-start;
+
+}
+
+
+/* ===================================
+   OUTGOING
+=================================== */
+
+.outgoing{
+
+    background:#005c4b;
+
+    align-self:flex-end;
+
 }
