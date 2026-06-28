@@ -1,1 +1,170 @@
-/* Write your css here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #e5ddd5;
+}
+
+/* MAIN WRAPPER */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 360px;
+    min-width: 360px;
+    height: 100vh;
+    background: #ffffff;
+    border-right: 1px solid #d1d7db;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    background: #f0f2f5;
+    color: #111b21;
+}
+
+.sidebar-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111b21;
+}
+
+.header-icons i {
+    margin-left: 18px;
+    color: #54656f;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.header-icons i:hover {
+    color: #111b21;
+}
+
+/* SEARCH */
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.search-box i {
+    color: #8696a0;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: #f0f2f5;
+    color: #111b21;
+    font-size: 14px;
+}
+
+/* FILTER BUTTONS */
+.filters {
+    display: flex;
+    gap: 8px;
+    padding: 8px 10px;
+    overflow-x: auto;
+    background: #ffffff;
+}
+
+.filters button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 18px;
+    background: #f0f2f5;
+    color: #54656f;
+    font-size: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.filters button.active {
+    background: #d9fdd3;
+    color: #008069;
+}
+
+/* CHAT LIST */
+.chat-list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* CHAT ITEM */
+.chat {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f2f5;
+    transition: 0.2s;
+}
+
+.chat:hover {
+    background: #f5f6f6;
+}
+
+.chat img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+/* CHAT INFO */
+.chat-info {
+    margin-left: 12px;
+    flex: 1;
+}
+
+.chat-info h4 {
+    color: #111b21;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.chat-info p {
+    color: #667781;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+/* TIME */
+.chat span {
+    font-size: 11px;
+    color: #667781;
+}
+
+/* RIGHT CHAT AREA */
+.chat-area {
+    flex: 1;
+    background: #efeae2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #667781;
+}
+
+.chat-area h2 {
+    color: #111b21;
+}/* Write your css here */
